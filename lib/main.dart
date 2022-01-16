@@ -71,23 +71,25 @@ class HomePage extends StatelessWidget{
                                 ),
                               ],
                             ),
-                            child: Column(
-                              children: [
-                                Text('LENGTH', style: TextStyle(fontSize: 30.0),),
-                                Text('(cm)', style: TextStyle(fontSize: 25.0),),
-                                SizedBox(height: 20,),
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-                                  child: TextField(
-                                    textAlign: TextAlign.center,
-                                    style: TextStyle(),
-                                    controller: _controller1,
-                                    decoration: InputDecoration(
-                                      hintText: 'Enter length',
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 20.0),
+                              child: Column(
+                                children: [
+                                  Text('LENGTH', style: TextStyle(fontSize: 30.0),),
+                                  Text('(cm)', style: TextStyle(fontSize: 25.0),),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 20.0, right: 20.0),
+                                    child: TextField(
+                                      textAlign: TextAlign.center,
+                                      style: TextStyle(),
+                                      controller: _controller1,
+                                      decoration: InputDecoration(
+                                        hintText: 'Enter length',
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                           ),
                           width: 250,
@@ -98,22 +100,24 @@ class HomePage extends StatelessWidget{
                       Expanded(
                         child: SizedBox(
                           child: Container(
-                            child: Column(
-                              children: [
-                                Text('GIRTH', style: TextStyle(fontSize: 30.0),),
-                                Text('(cm)', style: TextStyle(fontSize: 25.0),),
-                                SizedBox(height: 20,),
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 20.0, right: 20.0),
-                                  child: TextField(
-                                    textAlign: TextAlign.center,
-                                    controller: _controller2,
-                                    decoration: InputDecoration(
-                                      hintText: 'Enter girth',
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 20.0),
+                              child: Column(
+                                children: [
+                                  Text('GIRTH', style: TextStyle(fontSize: 30.0),),
+                                  Text('(cm)', style: TextStyle(fontSize: 25.0),),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 20.0, right: 20.0),
+                                    child: TextField(
+                                      textAlign: TextAlign.center,
+                                      controller: _controller2,
+                                      decoration: InputDecoration(
+                                        hintText: 'Enter girth',
+                                      ),
                                     ),
                                   ),
-                                ),
-                              ],
+                                ],
+                              ),
                             ),
                             decoration: BoxDecoration(
                               color: Colors.white,
